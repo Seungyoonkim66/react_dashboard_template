@@ -139,27 +139,53 @@ const BarData = {
   datasets: [
     {
       label: "ann",
-      data: [100],
+      data: [100,0,0,0,0,0],
       backgroundColor: `${palette.grape[3]}`,
-      stack: 1
     },
     {
       label: "ben",
-      data: [200],
+      data: [200,0,0,0,0,0],
       backgroundColor: `${palette.grape[1]}`,
-      stack: 1
     },
     {
       label: "ken",
-      data: [100],
+      data: [0,100,0,0,0],
       backgroundColor: `${palette.grape[7]}`,
-      stack: 2
     },
     {
       label: "ron",
-      data: [20],
+      data: [0,10,0,0,0],
       backgroundColor: `${palette.grape[9]}`,
-      stack: 2
+    },
+    {
+      label: "may",
+      data: [0,0,300,0,0],
+      backgroundColor: `${palette.grape[7]}`,
+    },
+    {
+      label: "min",
+      data: [0,0,230,0,0],
+      backgroundColor: `${palette.grape[9]}`,
+    },
+    {
+      label: "owe",
+      data: [0,0,0,23,0],
+      backgroundColor: `${palette.grape[7]}`,
+    },
+    {
+      label: "aps",
+      data: [0,0,0,50,0],
+      backgroundColor: `${palette.grape[9]}`,
+    },
+    {
+      label: "aafwd",
+      data: [0,0,0,0,110],
+      backgroundColor: `${palette.grape[7]}`,
+    },
+    {
+      label: "asd",
+      data: [0,0,0,0,100],
+      backgroundColor: `${palette.grape[9]}`,
     },
   ]
 }
@@ -204,6 +230,13 @@ const App = () => {
       <Bar 
         options={
           {
+            legend: {
+              display: true,
+              position: 'left',
+              labels: {
+                fontColor: '#555'
+              }
+            },
             scales: {
               xAxes: [{
                 stacked: true
