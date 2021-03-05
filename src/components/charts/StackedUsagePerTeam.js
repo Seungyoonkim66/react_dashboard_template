@@ -1,5 +1,4 @@
 import { Bar } from "react-chartjs-2";
-import Title from '../../lib/styledComponents/title';
 
 const StackedUsagePerTeam = ({ rawData, chartColors }) => {
 
@@ -41,7 +40,7 @@ const StackedUsagePerTeam = ({ rawData, chartColors }) => {
 
     return (
         <>
-            <Title>{rawData.chartName}</Title>
+            <p>{rawData.chartName}</p>
             <Bar options={options} data={data} />
         </>
     );
