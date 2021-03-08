@@ -16,8 +16,12 @@ import RequestCounts from './components/charts/RequestCounts';
 // color palette
 import palette from './lib/color/palette';
 import { chartColors1 } from './lib/color/chartColor';
+import KPMGColor from './lib/color/KPMGColor';
+
+
 // setting main color 
 const chartColors = chartColors1;
+// const chartColors = KPMGColor.chartColors;
 const chartColor = "75,192,192"; // as rgb 
 
 const StyledApp = styled.div`
