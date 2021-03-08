@@ -5,7 +5,7 @@ const StackedUsagePerTeam = ({ rawData, chartColors }) => {
     const options = {
         legend: {
             display: true,
-            position: 'left',
+            position: 'right',
             labels: {
                 fontColor: '#555'
             }

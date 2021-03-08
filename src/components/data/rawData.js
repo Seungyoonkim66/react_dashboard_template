@@ -88,3 +88,14 @@ export const stackedUsagePerTeamRawData = {
   ]
 }
 
+export const StackedUsageRawData = {
+  chartName: '누적 사용 건수',
+  data: 3070
+}
+
+export const RequestCountsRawData = {
+  chartName: '사업자번호 요청 갯수',
+  data: 62419,
+};
+
+

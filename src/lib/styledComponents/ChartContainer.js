@@ -1,23 +1,24 @@
 import styled from 'styled-components';
-import palette from '../color/palette';
+import palette from '../color/palette';  
 
 const StyledBox = styled.div`
-    border-radius: 9px;
-    background-color: rgba(255,255,255,1);
+    border-radius: 3px;
+    background-color: ${palette.white};
     margin: 1rem;
     padding: 2rem;
-    box-shadow: 0px 0px 40px rgba(255,255,255,0.2);
+    box-shadow: 0px 0px 30px ${palette.gray[3]};
     width: ${props => props.width || '500px'};
-    height: ${props => props.height || '300px'};
+    height: ${props => props.height || 'auto'};
     transition-duration: 0.2s;
-
     &:hover{
-        box-shadow: 0px 0px 40px #bdbdbd;
+        box-shadow:0px 0px 30px ${palette.gray[5]};
         transition-duration: 0.2s;
     }
+
 `;
 
 function ChartContainer ({ children, width, height }){
+
     return (
         <StyledBox width={width} height={height}>{children}</StyledBox>
     );
