@@ -2,7 +2,7 @@ import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
 
 
-const UsagePerTeam = ({ rawData, chartColors }) => {
+const UsagePerTeam = ({ rawData, chartColors, height, width }) => {
 
     const options = {
         legend: {
@@ -29,7 +29,7 @@ const UsagePerTeam = ({ rawData, chartColors }) => {
     return (
         <>
         <div>{rawData.chartName}</div>
-        <Doughnut options={options} data={data} />
+        <Doughnut options={options} data={data} height={height} width={width}/>
         </>
     );
 }

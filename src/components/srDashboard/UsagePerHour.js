@@ -1,6 +1,6 @@
 import { Line } from "react-chartjs-2";
 
-const UsagePerHour = ({ rawData, chartColors }) => {
+const UsagePerHour = ({ rawData, chartColors, width, height }) => {
     const options = {
         legend: {
             display: true,
@@ -28,7 +28,7 @@ const UsagePerHour = ({ rawData, chartColors }) => {
     return(
         <>
             <p>{rawData.chartName}</p>
-            <Line options={options} data={data}/>
+            <Line options={options} data={data} height={height} width={width}/>
         </>
     );
 }

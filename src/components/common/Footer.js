@@ -8,6 +8,10 @@ const StyledBox = styled.div`
     font-size: 0.7rem;
     text-align: center;
     color: ${palette.gray[5]};
+    position: relative;
+    /* bottom: 0; */
+    z-index: 1000;
+    width: 100%;
 `;
 
 const Footer = () => {
@@ -15,7 +19,6 @@ const Footer = () => {
         <StyledBox>
             <p>© 2021. 삼정KPMG Lighthouse Co. all rights reserved.</p>
             <p>For more detail about the structure of the KPMG global organization please visit https://home.kpmg/governance.</p>
-
         </StyledBox>
     );
 }

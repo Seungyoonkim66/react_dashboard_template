@@ -4,11 +4,10 @@ import palette from '../color/palette';
 const StyledBox = styled.div`
     border-radius: 3px;
     background-color: ${palette.white};
-    margin: 1rem;
-    padding: 2rem;
+    padding: 1rem;
     box-shadow: 0px 0px 30px ${palette.gray[3]};
-    width: ${props => props.width || '500px'};
-    height: ${props => props.height || 'auto'};
+    width: ${props => props.width || 'inherit'};
+    height: ${props => props.height || 'inherit'};
     transition-duration: 0.2s;
     &:hover{
         box-shadow:0px 0px 30px ${palette.gray[5]};

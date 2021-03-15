@@ -1,6 +1,6 @@
 import { Bar } from "react-chartjs-2";
 
-const StackedUsagePerTeam = ({ rawData, chartColors }) => {
+const StackedUsagePerTeam = ({ rawData, chartColors, width, height }) => {
 
     const options = {
         legend: {
@@ -41,7 +41,7 @@ const StackedUsagePerTeam = ({ rawData, chartColors }) => {
     return (
         <>
             <p>{rawData.chartName}</p>
-            <Bar options={options} data={data} />
+            <Bar options={options} data={data} height={height} width={width}/>
         </>
     );
 }

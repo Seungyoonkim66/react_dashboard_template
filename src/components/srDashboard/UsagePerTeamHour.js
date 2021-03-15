@@ -1,7 +1,7 @@
 import React from 'react';
 import { Line } from "react-chartjs-2";
 
-const UsagePerTeamHour = ({ rawData, chartColors }) => {
+const UsagePerTeamHour = ({ rawData, chartColors, width, height }) => {
     const options = {
         legend: {
             display: true,
@@ -32,7 +32,7 @@ const UsagePerTeamHour = ({ rawData, chartColors }) => {
     return (
         <>
             <p>{rawData.chartName}</p>
-            <Line options={options} data={data} />
+            <Line options={options} data={data} height={height} width={width}/>
         </>
     );
 }
