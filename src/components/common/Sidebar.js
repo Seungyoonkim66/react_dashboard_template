@@ -9,6 +9,7 @@ import MoreVertSharpIcon from '@material-ui/icons/MoreVertSharp';
 const StyledBox = styled.div` 
     background-color: ${palette.white};
     box-shadow: 2px 0px 4px ${palette.gray[3]};
+    padding-top: 60px;
     height: 100%;
     width: 80px;
     position: fixed;
