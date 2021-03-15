@@ -4,6 +4,7 @@ import palette from '../../lib/color/palette';
 import NavButton from './NavButton';
 import AssessmentSharpIcon from '@material-ui/icons/AssessmentSharp';
 import TransformSharpIcon from '@material-ui/icons/TransformSharp';
+import MoreVertSharpIcon from '@material-ui/icons/MoreVertSharp';
 
 const StyledBox = styled.div` 
     background-color: ${palette.white};
@@ -16,7 +17,8 @@ const StyledBox = styled.div`
 
 const navItems = [
     { name: 'SR value', link: '/sr', icon: <AssessmentSharpIcon /> },
-    { name: 'Libor', link: '/libor', icon: <TransformSharpIcon /> }
+    { name: 'Libor', link: '/libor', icon: <TransformSharpIcon /> },
+    { name: '', link: '/more', icon: <MoreVertSharpIcon /> },
 ];
 
 const Sidebar = () => {

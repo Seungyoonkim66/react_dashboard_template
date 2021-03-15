@@ -9,15 +9,17 @@ import * as data from './components/data/rawData';
 
 // color palette
 import { chartColors1 } from './lib/color/chartColor';
+import KPMGColor from './lib/color/KPMGColor';
 
 
 // setting main color 
-const chartColors = chartColors1;
-const chartColor = "75,192,192"; // as rgb 
+const chartColors = KPMGColor.chartColors;
+const chartColor = KPMGColor.lineChartColor; // as rgb 
 
 
 
 const App = () => {
+  console.log(chartColor);
   return (
     <BrowserRouter>
       <Header />

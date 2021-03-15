@@ -6,7 +6,6 @@ import Tooltip from '@material-ui/core/Tooltip';
 
 const StyledBox = styled.div`
     width: 80px;
-    color: ${KPMGColor.primary[2]};
     height: 60px;
     border-bottom: 1px solid #eee;
     display: flex;
@@ -15,12 +14,15 @@ const StyledBox = styled.div`
     &:hover{
         box-shadow: 0px 2px 3px #bbb;
     }
+    .btn{
+        color: ${KPMGColor.primary[2]};
+    }
 `;
 
 const NavButton = ({ item }) => {
     const { name, link, icon } = item
     return (
-        <NavLink to={link}>
+        <NavLink to={link} style={{color: '#00338d'}} activeStyle={{color: '#0091da'}}>
             <Tooltip title={name} placement="left">
                 <StyledBox>
                     {icon}

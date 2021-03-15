@@ -34,8 +34,20 @@ const KPMGColor = {
         "#666666"
     ],
     "chartColors" : [
-      
-    ]
+        "#00338d",
+        "#483698",
+        "#00a3a1",
+        "#0091da",
+        "#009a44",
+        "#eaaa00",
+        "#c6007e",
+        "#99bfe3",
+        "#f68d2e",
+        "#005eb8",
+        "#470a68",
+        "#6d2077"
+    ],
+    "lineChartColor" : "0,51,141",
 };
 
 export default KPMGColor;
