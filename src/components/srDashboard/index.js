@@ -12,12 +12,12 @@ import RequestCounts from './RequestCounts';
 // ChartContainer - default: width='auto' height='auto' - sizing with width, height props
 
 const StyledBox = styled.div`
-    width: 93.39%;
-    margin-left: 80px;
+    width: 100%;
+    /* margin-left: 80px; */
     padding: 1rem;
     display: grid;
-    grid-template-columns: repeat(6, 17rem);
-    grid-template-rows: 15rem 18rem 18rem;
+    grid-template-columns: repeat(6, 15.8%);
+    grid-template-rows: 30% 35% 35%;
     gap: 10px;
     align-items: stretch;
     justify-content: stretch;
@@ -36,39 +36,39 @@ const SRDashboard = ({ data, chartColors, chartColor }) => {
   return (
     <StyledBox>
       <div id='stacked-usage'>
-        <ChartContainer height='12.3rem'>
+        <ChartContainer height='85%'>
           <StackedUsage rawData={data.StackedUsageRawData} />
         </ChartContainer>
       </div>
 
 
       <div id='request-counts'>
-        <ChartContainer height='12.3rem'>
+        <ChartContainer height='85%'>
           <RequestCounts rawData={data.RequestCountsRawData} />
         </ChartContainer>
       </div>
 
       <div id='usage-time'>
         <ChartContainer>
-          <UsagePerHour rawData={data.usageParTimeRawData} chartColors={chartColor} width={110} height={15} />
+          <UsagePerHour rawData={data.usageParTimeRawData} chartColors={chartColor} width={110} height={16} />
         </ChartContainer>
       </div>
 
       <div id='usage-team'>
         <ChartContainer>
-          <UsagePerTeam rawData={data.usagePerTeamRawData} chartColors={chartColors} width={70} height={71} />
+          <UsagePerTeam rawData={data.usagePerTeamRawData} chartColors={chartColors} width={70} height={73} />
         </ChartContainer>
       </div>
 
       <div id='usage-time-team'>
         <ChartContainer>
-          <UsagePerTeamHour rawData={data.usagePerTimeHourRawData} chartColors={chartColors} width={120} height={22} />
+          <UsagePerTeamHour rawData={data.usagePerTimeHourRawData} chartColors={chartColors} width={130} height={23} />
         </ChartContainer>
       </div>
 
       <div id='stacked-usage-team'>
         <ChartContainer>
-          <StackedUsagePerTeam rawData={data.stackedUsagePerTeamRawData} chartColors={chartColors} width={120} height={22} />
+          <StackedUsagePerTeam rawData={data.stackedUsagePerTeamRawData} chartColors={chartColors} width={130} height={23} />
         </ChartContainer>
       </div>
     </StyledBox>
