@@ -6,9 +6,16 @@ export const usagePerTeamRawData = {
 
 export const usageParTimeRawData = {
   chartName: "시간대별 사용량",
-  labels : ["time1", "time2", "time3", "time4", "time5"],
+  labels : [
+    "2021-04-16-00:00", 
+    "2021-04-16-01:00", 
+    "2021-04-16-02:00", 
+    "2021-04-16-03:00", 
+    "2021-04-16-04:00", 
+    "2021-04-16-05:00",
+  ],
   label: 'line_name',
-  data : [20, 10, 30, 15, 32, 11]
+  data : [20, 10, 30, 15, 32, 11, 23]
 }
 
 export const usagePerTimeHourRawData = {

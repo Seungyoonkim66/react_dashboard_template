@@ -18,13 +18,13 @@ const StyledBox = styled.div`
 const navItems = [
     { name: 'SR value', link: '/sr', icon: <AssessmentSharpIcon /> },
     { name: 'Libor', link: '/libor', icon: <TransformSharpIcon /> },
-    { name: '', link: '/more', icon: <MoreVertSharpIcon /> },
+    { name: '', link: '/home', icon: <MoreVertSharpIcon /> },
 ];
 
 const Sidebar = () => {
     return(
         <StyledBox>
-            {navItems.map((item, i) => <NavButton key={i} item={item}/>)}
+            {navItems.map((item, i) => <NavButton key={i} item={item} />)}
         </StyledBox>
     );
 }

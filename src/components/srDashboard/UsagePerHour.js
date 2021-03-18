@@ -10,7 +10,6 @@ const UsagePerHour = ({ rawData, chartColors, width, height }) => {
             }
         }
     }; 
-
     const data= {
 
         labels: rawData.labels,
@@ -24,7 +23,6 @@ const UsagePerHour = ({ rawData, chartColors, width, height }) => {
           },
         ]
       };
-
     return(
         <>
             <p>{rawData.chartName}</p>

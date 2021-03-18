@@ -28,6 +28,7 @@ const StyledBox = styled.div`
     #usage-team{ grid-column: 1/3; grid-row: 2/4; }
     #usage-time-team{ grid-column: 3/7; grid-row: 2/3;}
     #stacked-usage-team{ grid-column: 3/7; grid-row: 3/4; }
+    /* p:nth-child(1){color: #00338d;} */
 `;
 
 

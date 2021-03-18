@@ -13,12 +13,16 @@ const StyledBox = styled.div`
         font-weight: 600;
         text-transform: uppercase;
     }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
 `;
 
 const Header = () => {
     return(
         <StyledBox>
-            <div id='logo'>lighthouse dashboard</div>
+            <a href='/'><div id='logo'>lighthouse dashboard</div></a>
         </StyledBox>
     );
 }
