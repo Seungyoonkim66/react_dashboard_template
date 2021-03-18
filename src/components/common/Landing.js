@@ -111,7 +111,7 @@ const StyledBox = styled.div`
     }
     .icon{
         align-self: flex-end;
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
         display: flex;
         flex-direction: column;
         width: 60%;
