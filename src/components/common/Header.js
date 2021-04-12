@@ -23,7 +23,7 @@ const StyledBox = styled.div`
 const Header = () => {
     return(
         <StyledBox>
-            <a href='/'><div id='logo'>lighthouse dashboard</div></a>
+            <a href='/'><div id='logo'>react dashboard template</div></a>
         </StyledBox>
     );
 }

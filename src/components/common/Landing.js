@@ -145,8 +145,8 @@ const Landing = () => {
             </StyledBackground>
             <StyledBox>
                 <div className='text'>
-                    <p>KPMG Lighthouse Dashboard</p>
-                    <p>This is Lighthouse dashboard for monitoring usage status of our products. </p>
+                    <p>React Dashboard Template</p>
+                    <p>This is React dashboard template using 'react chart js 2' library made by seungyoon.</p>
                 </div>
                 <div className='icon'>
                 <img src={icon} width='90%' alt='data-analysis' />

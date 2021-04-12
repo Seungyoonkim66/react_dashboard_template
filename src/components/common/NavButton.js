@@ -20,9 +20,9 @@ const StyledBox = styled.div`
 `;
 
 const NavButton = ({ item }) => {
-    const { name, link, icon } = item
+    const { name, icon } = item
     return (
-        <NavLink to={link} style={{color: '#00338d'}} activeStyle={{color: '#0091da'}}>
+        <NavLink to={`/${name}`} style={{color: '#00338d'}} activeStyle={{color: '#0091da'}}>
             <Tooltip title={name} placement="left">
                 <StyledBox>
                     {icon}

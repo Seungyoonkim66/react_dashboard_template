@@ -4,14 +4,7 @@ import Header from './components/common/Header';
 import Content from './components/common/Content';
 import Sidebar from './components/common/Sidebar';
 import Landing from './components/common/Landing';
-import SRDashboard from './components/srDashboard';
-import * as data from './components/data/rawData';
-import KPMGColor from './lib/color/KPMGColor';
-
-
-// setting main color 
-const chartColors = KPMGColor.chartColors;
-const chartColor = KPMGColor.lineChartColor; // as rgb 
+import { Dashboards } from './renderData';
 
 
 
@@ -24,8 +17,9 @@ const App = () => {
       <Route path='/home' exact render={() => <Landing />} />
 
       <Content>
-        <Route path='/sr' exact render={() => <SRDashboard data={data} chartColors={chartColors} chartColor={chartColor} />} />
-        <Route path='/libor' exact render={() => <div style={{ margin: '1rem'}}>libor dashboard</div>} />
+        {Dashboards.map((d,i) => 
+          <Route key={i} path={`/${d.name}`} exact render={() => d.component} />
+        )}
       </Content>
     </BrowserRouter>
   );
